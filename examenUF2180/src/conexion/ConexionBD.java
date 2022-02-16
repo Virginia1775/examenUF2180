@@ -6,6 +6,8 @@ package conexion;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+/**create user yo identified by "123456";
+grant all privileges on empresa.* to yo;
 
 /**
  * @author David
@@ -14,7 +16,7 @@ import java.sql.SQLException;
 public class ConexionBD {
 
 	private static final String database = "empresa";
-	private static final String usuario = "root";
+	private static final String usuario = "yo";
 	private static final String contraseña = "123456";
 	private static final String url="jdbc:mysql://localhost/"+database;
 	
